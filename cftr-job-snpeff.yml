@@ -1,0 +1,5 @@
+genome: GRCh37.75
+gzipfile:
+  class: File
+  path: CFTR_artifical_variant.vcf.gz
+outputname: cftr.grch37.snpeff.vcf

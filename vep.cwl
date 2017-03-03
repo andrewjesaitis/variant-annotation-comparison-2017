@@ -28,10 +28,13 @@ inputs:
     inputBinding:
       position: 2
       prefix: "--input_file"
-    doc: VCF file to ann\otate
+    doc: VCF file to annotate
+  outputname:
+    type: string
+    doc: Pass through for outputname
 
 outputs:
   output:
     type: stdout
 
-stdout: $(inputs.assembly + '-output.vcf')
+stdout: $(inputs.outputname)

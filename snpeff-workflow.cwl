@@ -7,11 +7,10 @@ cwlVersion: v1.0
 inputs:
   genome:
     type: string
-  # url:
-  #   type: string
-  #   doc: url of 1kg file
   gzipfile:
     type: File
+  outputname:
+    type: string
 
 outputs:
   outfile:
@@ -19,30 +18,18 @@ outputs:
     outputSource: snpeff/output
 
 steps:
-  # download:
-  #   run: download.cwl
-  #   in:
-  #     url: url
-  #   out: [gzipfile]
-
   gunzip:
     run: gunzip.cwl
     in:
       gzipfile: gzipfile
-    #  gzipfile: download/gzipfile
     out: [unzipped_vcf]
-
-  cut:
-    run: cut.cwl
-    in:
-      input_vcf: gunzip/unzipped_vcf
-    out: [trimmed_vcf]
 
   snpeff:
     run: snpeff.cwl
     in:
-      input_vcf: cut/trimmed_vcf
+      input_vcf:  gunzip/unzipped_vcf
       genome: genome
+      outputname: outputname
     out: [output]
 
 doc: |

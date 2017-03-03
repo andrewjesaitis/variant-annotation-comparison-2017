@@ -1,7 +1,0 @@
-#url: http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
-genome: GRCh37.75
-gzipfile:
-  class: File
-  path: ../1kg/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
-  #path: ../1kg/test.vcf.gz
-  

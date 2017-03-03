@@ -1,0 +1,8 @@
+assembly: GRCh37
+gzipfile:
+  class: File
+  path: CFTR_artifical_variant.vcf.gz
+vep_config:
+  class: File
+  path: ./vep.ini
+outputname: cftr.grch37.vep.vcf

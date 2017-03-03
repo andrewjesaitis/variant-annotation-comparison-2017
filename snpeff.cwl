@@ -20,10 +20,14 @@ inputs:
     type: File
     inputBinding:
       position: 2
-    doc: VCF file to ann\otate
+    doc: VCF file to annotate
+  outputname:
+    type: string
+    doc: Pass through to name stdout file
+        
 
 outputs:
   output:
     type: stdout
 
-stdout: $(inputs.genome + '-output.vcf')
+stdout: $(inputs.outputname)

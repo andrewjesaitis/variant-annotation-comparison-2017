@@ -1,8 +1,6 @@
-assembly: GRCh37
+genome: GRCh37.75
 gzipfile:
   class: File
   path: ../1kg/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
-vep_config:
-  class: File
-  path: ./vep.ini
-outputname: 1kg.chr22.grch37.vep.vcf
+outputname: 1kg.chr22.grch37.snpeff.vcf
+  

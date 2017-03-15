@@ -26,4 +26,4 @@ Then you can open the Jupyter Notebook and rerun all cells.
 
 Otherwise just skip to the punchline and [open the notebook](https://github.com/andrewjesaitis/variant-annotation-comparison-2017/blob/master/Variant-Annotation-Comparsion-2017.ipynb) on Github.
 
-I'm planning on writing this up in a blog post soon! Stay tuned!
+I've written up a discussion of the results and dug into some particularly troublesome variants on [my blog](http://andrewjesaitis.com/2017/03/the-state-of-variant-annotation-in-2017/).

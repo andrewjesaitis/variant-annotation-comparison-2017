@@ -27,3 +27,5 @@ Then you can open the Jupyter Notebook and rerun all cells.
 Otherwise just skip to the punchline and [open the notebook](https://github.com/andrewjesaitis/variant-annotation-comparison-2017/blob/master/Variant-Annotation-Comparsion-2017.ipynb) on Github.
 
 I've written up a discussion of the results and dug into some particularly troublesome variants on [my blog](http://andrewjesaitis.com/2017/03/the-state-of-variant-annotation-in-2017/).
+
+I've also added the gzip'd vcf that highligh some mismatches. Note that these vcfs contain repeated variants (since I am outputing a single variant-transcript pair per line). The keys in the `INFO` field are self documenting. These files are `impact_mismatch.vcf.gz`, `effect_mismatch.vcf.gz`, and `hgvs_mismatch.vcf.gz`.
